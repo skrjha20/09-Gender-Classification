@@ -44,7 +44,7 @@ def randomforest_model(X_train, X_test, y_train, y_test):
     
 if __name__ == "__main__":
 
-    data = pd.read_csv("voice.csv")  
+    data = pd.read_csv("data.csv") 
     y_data = data['label']
     y_data = LabelEncoder().fit_transform(y_data)
     X_data = data.drop(['label'], axis=1)
